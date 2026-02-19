@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🎬 Catálogo de Cine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎬 Catálogo de Películas</h1>
+
+  <div class="form-container">
+    <input type="text" id="titulo" placeholder="Título">
+    <input type="text" id="genero" placeholder="Género">
+    <input type="number" id="anio" placeholder="Año">
+    <input type="text" id="imagen" placeholder="URL Imagen">
+    <button onclick="agregarPelicula()">Agregar</button>
+  </div>
+
+  <input type="text" id="busqueda" placeholder="Buscar película..." oninput="mostrarPeliculas()">
+
+  <div id="peliculas" class="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
